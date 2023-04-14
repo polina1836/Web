@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lb 2</title>
+    <link rel = "stylesheet" type="text/css" href="calculator.css">
+  </head>
+  <body>
+    <form
+    style="align-items: center;">
+      <input type="text" id="expression" name="expression">
+      <br>
+      <button type="button" onclick="addToExpression('1')">1</button>
+      <button type="button" onclick="addToExpression('2')">2</button>
+      <button type="button" onclick="addToExpression('3')">3</button>
+      <button type="button" onclick="addToExpression('+')">+</button>
+      <br>
+      <button type="button" onclick="addToExpression('4')">4</button>
+      <button type="button" onclick="addToExpression('5')">5</button>
+      <button type="button" onclick="addToExpression('6')">6</button>
+      <button type="button" onclick="addToExpression('-')">-</button>
+      <br>
+      <button type="button" onclick="addToExpression('7')">7</button>
+      <button type="button" onclick="addToExpression('8')">8</button>
+      <button type="button" onclick="addToExpression('9')">9</button>
+      <button type="button" onclick="addToExpression('*')">*</button>
+      <br>
+      <button type="button" onclick="addToExpression('0')">0</button>
+      <button type="button" onclick="addToExpression('.')">.</button>
+      <button type="button" onclick="evaluateExpression()">=</button>
+      <button type="button" onclick="addToExpression('/')">/</button>
+      <br>
+      <input type="text" id="result" name="result" readonly>
+    </form>
+
+    <script>
+      function addToExpression(value) {
+        document.getElementById("expression").value += value;
+      }
+
+      function evaluateExpression() {
+        var expression = document.getElementById("expression").value;
+        var result = eval(expression);
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+form {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: gold;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 24px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #162389;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 24px;
+    height: 60px;
+    margin: 5px;
+    padding: 10px;
+    width: calc(25% - 10px);
+}
+
+button:hover {
+    background-color: #162389;
+}
+
+button:active {
+    background-color: #162389;
+}
+
+input[type="text"][readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+}
