@@ -48,6 +48,11 @@
     }
 
     table {
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+
+    td,th {
       border: 1px solid black;
     }
   </style>
@@ -65,7 +70,7 @@
     </select>
 
     <form method="post">
-      <label for="fmark">Оцінка</label><br>
+      <label for="mark">Оцінка</label><br>
       <input type="text" id="mark" name="mark" value="100"><br>
       <label for="fcomment">Коментар</label><br>
       <input type="text" id="fcomment" name="comment" value="Відповідь супер"><br>
