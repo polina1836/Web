@@ -13,6 +13,8 @@
  БД для зберігання інформації про розклад проведення занять
 
 1. Вибір довільної групи зі списку
+![image](https://user-images.githubusercontent.com/127737689/233688040-c53ff8b8-5d87-4b15-b772-6458886c3ec9.png)
+
 image.png
 image.png
 image.png
